@@ -40,19 +40,19 @@ h2 {
 
 /*Background-image de secciones*/
 .titulo--in {
-  background-image: url("../Image/titulo-in.jpg");
+  background-image: url("../image/titulo-in.jpg");
 }
 
 .titulo--ga {
-  background-image: url("../Image/titulo-ga.jpg");
+  background-image: url("../image/titulo-ga.jpg");
 }
 
 .titulo--nh {
-  background-image: url("../Image/titulo-nh.jpg");
+  background-image: url("../image/titulo-nh.jpg");
 }
 
 .titulo--nr {
-  background-image: url("../Image/titulo-nr.jpg");
+  background-image: url("../image/titulo-nr.jpg");
 }
 
 @media (min-width: 360px) and (max-width: 650px) {
@@ -301,7 +301,7 @@ h2 {
   flex-direction: row;
 }
 .carrousel__nr img {
-width: 100%;
+  width: 100%;
 }
 
 .carrousel__nr--m {

@@ -54,7 +54,7 @@ h2 {
 /*Background-image de secciones*/
 @each $section in $sections {
     .titulo--#{$section} {
-        background-image: url("../Image/titulo-#{$section}.jpg");
+        background-image: url("../image/titulo-#{$section}.jpg");
     }
 
 }
