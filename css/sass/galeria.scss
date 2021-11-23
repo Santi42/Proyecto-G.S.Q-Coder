@@ -1,0 +1,104 @@
+$i:0;
+$o:0;
+
+
+
+.section__ga {
+    margin: 2rem;
+}
+
+.container__ga {
+    margin-bottom: 7rem;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 1%;
+    grid-template-areas:
+        "img--1 img--1 img--2 img--3 "
+        "img--1 img--1 img--4 img--5"
+        "img--6 img--7 img--7 img--8"
+        "img--9 img--7 img--7 img--8"
+        "img--10 img--11 img--11 img--11"
+        "img--10 img--12 img--13 img--14"
+    ;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.466);
+        transition: all 400ms;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+/*grid-area para cada img*/
+@for $i from 1 through 14 {
+    .img--#{$i} {
+        grid-area: img--#{$i};
+    }
+
+    @if $i==5 {
+        .img--#{$i} {
+            grid-area: img--#{$i};
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-auto-rows: minmax(95px, auto);
+            grid-template-areas: "img--#{$i}--1 img--#{$i}--1"
+            "img--#{$i}--3 img--#{$i}--4";
+            grid-gap: 5%;
+            width: 95%;
+        }
+    }
+
+    @else if $i==6 {
+        .img--#{$i} {
+            grid-area: img--#{$i};
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-auto-rows: minmax(95px, auto);
+            grid-template-areas: "img--#{$i}--1 img--#{$i}--1"
+            "img--#{$i}--3 img--#{$i}--4";
+            grid-gap: 5%;
+            width: 95%;
+        }
+    }
+
+    @else if $i==13 {
+        .img--#{$i} {
+            grid-area: img--#{$i};
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-auto-rows: minmax(95px, auto);
+            grid-template-areas: "img--#{$i}--1 img--#{$i}--1"
+            "img--#{$i}--3 img--#{$i}--4";
+            grid-gap: 5%;
+            width: 95%;
+        }
+    }
+
+}
+
+@media (min-width:360px) and (max-width:650px) {
+    .container__ga {
+        margin-bottom: 12rem;
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-auto-rows: minmax(200px, auto);
+        grid-gap: 1%;
+        grid-template-areas:
+            "img--1 img--1"
+            "img--2 img--8"
+            "img--4 img--5"
+            "img--6 img--3"
+            "img--7 img--7"
+            "img--10 img--9"
+            "img--10 img--12"
+            "img--13 img--14"
+            "img--11 img--11";
+    }
+    
+}

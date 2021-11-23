@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+$colorOrange: #ED6F2A;
+$colorBlue: #2B4D9C;
+$colorWhite: #EEEDED;
+$heigSec: 90vh;
+$mText: 4rem;
+/*Lista para background-image de secciones*/
+$sections: "in",
+"ga",
+"nh",
+"nr";
+
+* {
+    font-family: 'Noto Sans Mono', monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    margin: 0px 5rem 0px 5rem;
+
+}
+
+h2 {
+    color: $colorBlue;
+}
+
+.titulo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 5rem;
+
+    .titulo__text {
+        color: white;
+        text-align: center;
+        margin-top: $mText+1;
+        font-weight: 600;
+        font-size: 5rem;
+        text-shadow: 0.1em 0.1em 0.2em black;
+        text-transform: capitalize;
+    }
+
+}
+/*Background-image de secciones*/
+@each $section in $sections {
+    .titulo--#{$section} {
+        background-image: url("../Image/titulo-#{$section}.jpg");
+    }
+
+}
+
+
+@media (min-width:360px) and (max-width:650px) {
+    section {
+        margin: 2rem;
+    }
+
+    .titulo {
+        .titulo__text {
+            font-size: 4rem;
+        }
+    }
+
+}

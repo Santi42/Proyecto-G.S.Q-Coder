@@ -1,0 +1,59 @@
+.footer {
+    background: rgb(35, 57, 138);
+    background: radial-gradient(circle, rgba(35, 57, 138, 1) 0%, rgba(9, 9, 121, 1) 58%, rgba(2, 0, 36, 1) 100%);
+    text-transform: uppercase;
+    padding: 1.6rem;
+    .footer__titulo {
+        color: white;
+        padding-bottom: 0.5rem;
+    }
+    .footer__gsq {
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+        text-align: center;
+        justify-content: center;
+
+        .footer__gsq__img{
+            width: 4rem;
+        }
+
+        .footer__gsq__nombre {
+            text-transform: capitalize;
+            color: white;
+            font-size: 2.5rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        .footer__nav__ul {
+            list-style-type: none;
+            padding-left: 0rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover {
+                color: $colorOrange;
+            }
+        }
+    }
+
+    .footer__redes {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+
+        .footer__redes__logos {
+            margin-bottom: 1rem;
+            width: 2rem;
+        }
+    }
+}
