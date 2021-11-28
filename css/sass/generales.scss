@@ -60,14 +60,14 @@ h2 {
 }
 
 
-@media (min-width:360px) and (max-width:650px) {
+@media (min-width:320px) and (max-width:650px) {
     section {
         margin: 2rem;
     }
 
     .titulo {
         .titulo__text {
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
     }
 

@@ -65,7 +65,7 @@
     }
 }
 
-@media (min-width:360px) and (max-width:650px) {
+@media (min-width:320px) and (max-width:650px) {
     .section1 {
         height: auto;
         max-height: none;
@@ -122,6 +122,9 @@
 
     .section3 {
         text-align: center;
+        .section3__texto {
+            font-size: 1.8rem;
+        }
     }
 }
 
